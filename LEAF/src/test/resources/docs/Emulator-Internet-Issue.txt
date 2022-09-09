@@ -1,0 +1,18 @@
+How to resolved Internet issue in Emulators:
+
+1. pen Control Panel
+2. Click on Network and Internet
+3. Click on Internet and Sharing Center
+4. Click on your Wi-Fi Connection name Refer : Image for clarity
+5. Click on Properties
+6. Then select Internet Protocol Version 4 and click on Properties enter image description here
+7. Click Advanced -> Click on Tab DNS -> Click on Add
+8. Write 8.8.8.8 & Click Add. You can also enter Alternate DNS as 8.8.4.4
+
+9. Open Android Studio
+10. Tools > ADV
+11. Click on down arrow agains your virtual device and select 'Cold Boot Now'
+12. Check your emulator, you should access internet
+
+
+Reference: https://sqa.stackexchange.com/questions/43087/how-to-fix-no-internet-internet-not-working-for-android-emulator-on-windows-10

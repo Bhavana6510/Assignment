@@ -1,0 +1,169 @@
+##################################################################################################################
+22 July 2021    *** JIRA API ***
+
+Updated below Existing class: 
+1.CalendarUtils.java
+2.CSVFileUtils.java
+3.FileManager.java
+4.RestApiUtils.java
+
+Newly Created
+src/main/java
+package : qa.framework.testexecutionupdate (Contains)
+1.JiraAPI.java
+2.JiraManualUpdate.java
+3.JiraReport.java
+
+src/test/resources
+1.extent.proporties
+
+pom.xml
+dataproviderthreadCount ---> dataproviderthreadcount
+
+##################################################################################################################
+
+29 Sept 2020 - 20 Oct 2020 ***_GRAPHQL-INTEGRATION_***
+ 
+7. GraphQL support added
+6. Boiler code removed from all the config() methods.
+5. Updated 'LTI QA Automation Testing Framework - Tooling Setup Guide v0.9.docx' with steps to handle Eclipse error  'Can not complete install because one or more required items could not be found'
+4. Updated 'Execution ReadMe' file cmd for dynamically updating feature cucumber options.
+3. Bug Fix: remove space from header name in getMappedRowData() ExcelUtils.java
+2. Added getFutureDate() in CalendarUtil class
+1. Added StringFunction class checkIsASCII() and cleanJavaString()
+
+
+File Changed:
+1. + StringFunction.java
+2. CalendarUtil.java 
+3. POM.xml
+4. + qa.framework.graphql
+5. + qa.hasura.webui.pages
+6. + qa.hasura.webui.pages
+7. + qa.hasura.webui.stepdefs
+
+
+1. renamed Reporter.addResponse() to Reporter.addFile();
+
+File Changed:
+1. Reporter.java
+2. RestApiUtils.java
+
+1. added sendkeys() to except keys in Action class
+2. added gherkin statement to add proxy in rest call
+3. added getAllKeys() in PropertyFileUtils class.
+4. added runBatchFile() in FileManager class.
+5. added device locator 'device-AndroidUIAutomator' in getDeviceElement().
+	same locator is added to DB as well value-type table.
+6. added killJavaProcess() in SystemProcess class
+7. updated VALU_TYPE.xlsx
+8. Response Time is added to RestApiUtils.java
+9. added openNewTab(String url) in Action.java
+10. added runBatchFile() and writeInputStream() in SystemProcess.java
+
+File Changed:
+1. Action.java
+2. RestApiUtils.java
+3. PropertyFileUtils.java
+4. FileManager.java
+5. Element.java
+6. SystemProcess.java
+7. VALU_TYPE.xlsx
+8. RestApiUtils.java
+9. Action.java
+10. SystemProcess.java
+
+
+##################################################################################################################
+
+11 Feb 2021 -Bug fix
+1. correct screen capture per action.
+
+File Change:
+1. Action.java
+2. config.properties
+
+
+
+20 Oct 2020 - 
+1. Warning from log4j fixed by keeping log4j.properties file in 'src/main/resources' source folder.
+2. Method added to get and set cell style in ExcelUtils.java.
+3. Method added to convert millisecond into date in CalendarUtils.java
+4. Deprecated moveScreenshotToSparkfolder() and updateRelativeScreenshotPath() in Reporter class
+5. Corrected spell mistake in driverVersion in config.properties and WebDriverManager class.
+File Changed:
+
+1. RunCucumber.java
+2. LoggerHelper.java 
+3. ExcelUtils.java.
+4. CalendarUtils.java
+5. Reporter.java
+6. WebDriverManager.java
+7. config.properties
+
+29 Sept 2020 - 20 Oct 2020 ***_INTEGRATION OF APPIUM_***
+*POM.xml is changed: version property variable provided for different SQL dbs dependencies
+1. Bug fix: 'NullPointerException' when setting query parameter in HttpClientUtils
+2. Renamed Conversion class to MathFunction
+3. Added Random function to MathFunction class.
+4. Added 'Convert-cer-to-pfx-Certificates.txt'
+5. Updated fileUploadUsingAutoIt function in FileManager class.
+6. Integrated Device testing with Appium
+7. Re-implemented setProperty in PropertyFileUtils (fixing issue: properties are getting jumbles after user set any property value)
+8. Bug fix: directly invoking Action.srcCapPerAction in takeScrCapPerAction()
+9. Bug fix: clear() method DesktopAction
+10. Added proxy() in RestApiUtils
+11. Added method to take device screenshot in CaptureSceenshot and Reporter 
+12. Added Jenkins ReadMe.txt
+13. Added Emulator-Internet-issue.txt
+14. onFailure screenshot for device added in Hook.java
+15. given proper naming convention to Desktop property in config.property file
+16. removed not needed default constructor from Action class.
+
+File Changed:
+HttpClientUtils.java
+RequestBuilder.java
+Conversion > MathFunction
+FileManager
+FileUpload.au3
+FileUpload(x64).exe
+FileUpload(x86).exe
+RunCucumberTest.java
++DeviceDriverManager.java
++AndroidAppDriver.java
++ChromeBrowserDevice.java
++IOSAppDriver.java
++SafariBrowserDevice.java
++DeviceActions.java
++CommonDeviceStepDefs.java
++appum.properties
++DeviceWaitManager.java
++qa.selenium.device.pages
++qa.selenium.device.stepdefs
++qa.amazon.device.pages
++qa.amazon.device.stepdefs
++Convert-cer-to-pfx-Certificates.txt
+Hook.java
+Element.java
+PropertyFileUtils
+Action.java
+DesktopAction.java
+DesktopDriverManager.java
+RestApiUtils.java
+CaptureSceenshot.java
+Reporter.java
++Jenkins ReadMe.txt
++Emulator-Internet-issue.txt
+config.properties
+
+28 Sept 2020 - 28 Sept 2020
+1. Project artifact changed from 'Leaf' to 'LEAF'
+2. Added support to connect to different db such as POST GRE, MYSQL, MSSQL, DB2, OJDBC8 in DBManager utils. 
+3. Soft coded SQLDriver to support different sql dbs.
+
+File Changed:
+1. Added DBManager class
+2. Added DBType enum
+2. SQLDriver changed
+
+*POM.xml is changed

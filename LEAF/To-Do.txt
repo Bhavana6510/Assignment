@@ -1,0 +1,4 @@
+1. SFTP upload/download through JAVA
+2. Update cucumber/extent report dependencies
+3. DONE-Remove boiler code for reading the parameters from cmd and config file and replace with Syste.getProperty("parameter_name","default_value").
+

@@ -1,0 +1,11 @@
+/target/
+
+/test-output/
+/.metadata/
+/logs/
+/Leaf/
+
+/log4j.properties
+
+/*.orig
+/LEAF/

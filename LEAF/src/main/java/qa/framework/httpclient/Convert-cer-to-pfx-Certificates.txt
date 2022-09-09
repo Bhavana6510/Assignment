@@ -1,0 +1,17 @@
+Convert .cer certificate file to .pfx certificate file:
+
+Step 1: Download and Install 'Win64 OpenSSL v1.1.1h Light.exe' file from below url:
+https://slproweb.com/products/Win32OpenSSL.html
+
+Step 2: Open 'Win64 OpenSSL Command Prompt'
+
+Step 3: Enter below cmd
+openssl -export -in <path of .cer file> -inkey <path of .key file> -out <output file path with .pfx extension>
+
+openssl pkcs12 -export -in <path of .cer file> -inkey <path of .key file> -out <output file path with .pfx extension>
+
+Step 4: Enter password and re-enter password for .pfx certificate file.
+
+Reference:
+http://edtechchris.com/2020/02/11/convert-cer-to-pfx-certificates-in-openssl/
+ 

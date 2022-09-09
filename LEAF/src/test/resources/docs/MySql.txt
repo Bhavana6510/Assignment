@@ -1,0 +1,18 @@
+Open MYSQL Command Line.
+
+1.(optional) use can create a shortcut with below command if My SQL #.# Comman Line shortcut not avaiable already
+"C:\Program Files\MySQL\MySQL Server #.#\bin\mysql.exe" "--defaults-file=C:\ProgramData\MySQL\MySQL Server #.#\my.ini" "-uroot" "-p"
+
+for example, for My SQL 8.0 below command will be used: 
+"C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe" "--defaults-file=C:\ProgramData\MySQL\MySQL Server 8.0\my.ini" "-uroot" "-p"
+
+2. Enter password
+
+
+Increase max connection:
+
+a. below command will show current max connect can be connected. (cmd is case sensitive) 
+SHOW VARIABLES LIKE "max_connections";
+
+b. set max connection (cmd is case sensitive)
+SET GLOBAL max_connections = 500;
